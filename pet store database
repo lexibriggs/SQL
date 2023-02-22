@@ -1,0 +1,25 @@
+--Create a pet store data base
+
+CREATE TABLE pet_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+
+INSERT INTO pet_store VALUES (1, "kibble", 10.00);
+INSERT INTO pet_store VALUES (2, "leash", 20.00);
+INSERT INTO pet_store VALUES (3, "bone", 5.00);
+INSERT INTO pet_store VALUES (4, "treats", 3.00);
+INSERT INTO pet_store VALUES (5, "harness", 40.00);
+INSERT INTO pet_store VALUES (6, "brush", 10.00);
+INSERT INTO pet_store VALUES (7, "shampoo", 15.00);
+INSERT INTO pet_store VALUES(8, "conditioner", 15.00);
+INSERT INTO pet_store VALUES (9, "bowl", 6.00);
+INSERT INTO pet_store VALUES (10, "toy", 5.00);
+INSERT INTO pet_store VALUES (11, "ball", 1.00);
+INSERT INTO pet_store VALUES (12, "jacket",40.00);
+INSERT INTO pet_store VALUES (13, "hat", 15.00);
+INSERT INTO pet_store VALUES (14, "glasses",10.00);
+INSERT INTO pet_store VALUES (15, "bags", 5.00);
+
+- orders items by price
+SELECT * FROM pet_store ORDER BY price;
+
+-total price of items in pet store
+SELECT SUM(price) FROM pet_store;
